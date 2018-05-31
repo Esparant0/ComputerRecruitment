@@ -3,4 +3,87 @@ package ComputerRecruitment;
 public class Student {
     private String lastName;
     private String firstName;
+    private double gpa;
+    private char sex;
+    private boolean appCompleted;
+    
+    public Student(String name, double gpa, char sex, boolean appCompleted) {
+        lastName = name.substring(name.indexOf(" ") + 1);
+        firstName = name.substring(0, name.indexOf(" "));
+        this.gpa = gpa;
+        this.sex = sex;
+        this.appCompleted = appCompleted;
+    }
+
+    /**
+     * @return the lastName
+     */
+    public String getLastName() {
+        return lastName;
+    }
+
+    /**
+     * @param lastName the lastName to set
+     */
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
+
+    /**
+     * @return the firstName
+     */
+    public String getFirstName() {
+        return firstName;
+    }
+
+    /**
+     * @param firstName the firstName to set
+     */
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+
+    /**
+     * @return the gpa
+     */
+    public double getGpa() {
+        return gpa;
+    }
+
+    /**
+     * @param gpa the gpa to set
+     */
+    public void setGpa(double gpa) {
+        this.gpa = gpa;
+    }
+
+    /**
+     * @return the sex
+     */
+    public char getSex() {
+        return sex;
+    }
+
+    /**
+     * @param sex the sex to set
+     */
+    public void setSex(char sex) {
+        this.sex = sex;
+    }
+
+    /**
+     * @return the appCompleted
+     */
+    public boolean isAppCompleted() {
+        return appCompleted;
+    }
+
+    /**
+     * @param appCompleted the appCompleted to set
+     */
+    public void setAppCompleted(boolean appCompleted) {
+        this.appCompleted = appCompleted;
+    }
+    
+}
     
