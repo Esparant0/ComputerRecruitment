@@ -6,8 +6,9 @@ public class Student {
     private double gpa;
     private char sex;
     private boolean appCompleted;
+    private int grade;
     
-    public Student(String name, double gpa, char sex, boolean appCompleted) {
+    public Student(String name, double gpa, char sex, boolean appCompleted, int grade) {
         lastName = name.substring(name.indexOf(" ") + 1);
         firstName = name.substring(0, name.indexOf(" "));
         this.gpa = gpa;
@@ -85,6 +86,13 @@ public class Student {
         this.appCompleted = appCompleted;
     }
     
+    public int getGrade() {
+        return grade;
+    }
+    
+    public void setGrade(int grade) {
+        this.grade = grade;
+    }
     
 }
     
