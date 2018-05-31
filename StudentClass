@@ -85,5 +85,6 @@ public class Student {
         this.appCompleted = appCompleted;
     }
     
+    
 }
     
