@@ -1,5 +1,21 @@
 package ComputerRecruitment;
 
 public class SortingClass {
+ 
+ public static void sortGPA (double [] n) 
+    {
+    for (int i=n.length; i>1; i--)
+        {
+            int r=0;
+            for (int c=1; c<i; c++)
+            {
+                if (n[c]>n[r])
+                    r=c;
+            }
+            double temp= n[r];
+            n[r]= n[i-1];
+            n[i-1]= temp;
+        }
+    }
 
 }
