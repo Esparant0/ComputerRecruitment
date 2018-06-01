@@ -2,7 +2,7 @@ package ComputerRecruitment;
 
 public class SortingClass {
  
- public static void sortGPA (double [] n) 
+ public static void sortGPA (ArrayList<Student> students) 
     {
     for (int i=n.length; i>1; i--)
         {
